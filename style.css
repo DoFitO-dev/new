@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: radial-gradient(
+    #202020 20%,
+    #232323 20%,
+    #232323 40%,
+    #262626 40%,
+    #292929 60%,
+    #292929 60%,
+    #333333 80%);
+}
