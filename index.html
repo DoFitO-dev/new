@@ -15,18 +15,20 @@
 </head>
 <body>
 
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
     <header>
         <a href="#" class="logo"><i class="fa-solid fa-vector-square"></i><span class="str">My</span><span>World</span></a>
 
         <ul class="navbar">
             <li>
-                <a href="#home" class="active">Home</a>
+                <a href="#home" class="active cool-link">Home</a>
             </li>
             <li>
-                <a href="#about">About</a>
+                <a href="#about" class="cool-link">About</a>
             </li>
             <li>
-                <a href="#contact">Contact</a>
+                <a href="#contact" class="cool-link">Contact</a>
             </li>
         </ul>
 
@@ -35,6 +37,7 @@
             <div class="bx bx-menu" id="menu-icon"></div>
             <div class="d-toggler"><a href="index_d.html"><i class="fa-solid fa-circle-half-stroke"></i></a></div>
         </div>
+
     </header>
 
     <div class="row">
@@ -42,12 +45,6 @@
             <h1>EXPLORE</h1>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci dolorum mollitia iure, deleniti qui saepe non, tenetur obcaecati explicabo, quo ducimus quos nulla. Sed neque dolorem asperiores ducimus a placeat temporibus consequatur cum, molestias tempore sunt molestiae id ullam sequi aliquam, eos, sapiente maxime hic eius et in itaque natus? Vitae, velit. Error ea aperiam quas.</p>
             <a href="#" class="main-gate-2">Get Started</a>
-        </div>
-        <div class="col">
-            <div class="card">
-                <h5>Ipsum</h5>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum corporis unde sunt quasi, tenetur nesciunt fugit explicabo temporibus incidunt, eius nisi alias molestias dolorem vel mollitia aut dolores neque molestiae beatae modi itaque quo. Voluptas inventore culpa ipsa officiis rerum, labore ducimus doloribus repudiandae fugit perspiciatis quam nam.</p>
-            </div>
         </div>
     </div>
 
@@ -59,6 +56,16 @@
             menu.classList.toggle('bx-x');
             navbar.classList.toggle('open');
         }
+    </script>
+
+    <script>
+        var cursor = document.querySelector(".cursor");
+        var cursor2 = document.querySelector(".cursor2");
+
+        document.addEventListener("mousemove", function(e){
+            cursor.style.cssText = cursor2.style.cssText = "left: " + e.clientX 
+            + "px; top: " + e.clientY + "px;";
+        })
     </script>
 
 </body>
