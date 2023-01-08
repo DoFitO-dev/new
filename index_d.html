@@ -15,28 +15,38 @@
 </head>
 <body>
 
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
     <header>
-        <a href="#" class="logo"><i class="fa-solid fa-vector-square"></i><span>Logo</span></a>
+        <a href="#" class="logo"><i class="fa-solid fa-vector-square"></i><span class="str">My</span><span class="change"></span></a>
 
         <ul class="navbar">
             <li>
-                <a href="#home" class="active">Home</a>
+                <a href="#home" class="active cool-link">Home</a>
             </li>
             <li>
-                <a href="#about">About</a>
+                <a href="about.html" class="cool-link">About</a>
             </li>
             <li>
-                <a href="#contact">Contact</a>
+                <a href="#contact" class="cool-link">Contact</a>
             </li>
         </ul>
 
         <div class="main">
-            <a href="#" class="main-gate">Get started</a>
+            <a href="#" class="main-gate-1">Get Started</a>
             <div class="bx bx-menu" id="menu-icon"></div>
             <div class="d-toggler"><a href="index.html"><i class="fa-solid fa-circle-half-stroke"></i></a></div>
         </div>
 
     </header>
+
+    <div class="row">
+        <div class="col">
+            <h1 class="cool-link">EXPLORE</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci dolorum mollitia iure, deleniti qui saepe non, tenetur obcaecati explicabo, quo ducimus quos nulla. Sed neque dolorem asperiores ducimus a placeat temporibus consequatur cum, molestias tempore sunt molestiae id ullam sequi aliquam, eos, sapiente maxime hic eius et in itaque natus? Vitae, velit. Error ea aperiam quas.</p>
+            <a href="#" class="main-gate-2">Get Started</a>
+        </div>
+    </div>
 
     <script>
         let menu = document.querySelector('#menu-icon');
@@ -46,6 +56,16 @@
             menu.classList.toggle('bx-x');
             navbar.classList.toggle('open');
         }
+    </script>
+
+    <script>
+        var cursor = document.querySelector(".cursor");
+        var cursor2 = document.querySelector(".cursor2");
+
+        document.addEventListener("mousemove", function(e){
+            cursor.style.cssText = cursor2.style.cssText = "left: " + e.clientX 
+            + "px; top: " + e.clientY + "px;";
+        })
     </script>
 
 </body>
