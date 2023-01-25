@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 * {
     margin: 0;
@@ -71,7 +74,7 @@ header {
     content: '';
     display: block;
     width: 0;
-    height: 2px;
+    height: 1px;
     background: #161616;
     transition: width .3s;
 }
@@ -110,7 +113,7 @@ header {
 
 .logo span.change::after {
     content: "World";
-    animation: textanim 10s linear infinite;
+    animation: textanim 9s linear infinite;
 }
 
 @keyframes textanim {
@@ -250,10 +253,34 @@ header {
     transition: all .50s ease;
 }
 
+.row h1::after {
+    content: "Hello";
+    animation: topanim 9s linear infinite;
+}
+
+@keyframes topanim {
+    15% {
+        content: "Bonjour";
+    }
+    25% {
+        content: "Hola";
+    }
+    50% {
+        content: "ഹലോ";
+    }
+    75% {
+        content: "नमस्ते";
+    }
+    100% {
+        content: "こんにちは";
+    }
+}
+
 .row p {
     color: #161616;
-    font-size: 21px;
+    font-size: 1.3rem;
     padding: 10px;
+    font-weight: 400;
     line-height: 32px;
     padding-bottom: 50px;
 }
@@ -277,4 +304,19 @@ header {
 
 @media (max-width: 1733px){
     
+}
+
+.sec1 {
+    width: 100%;
+    height: 50vh;
+    padding: 20px 30% 20px;   
+}
+.sec1 h1 {
+    padding: auto center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+}
+
+.sec1 p {
+    font-family: 'Source Sans Pro', sans-serif;  
 }

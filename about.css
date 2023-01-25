@@ -43,7 +43,7 @@ about {
     height: 100vh;
 }
 
-div.top1 {
+.top1 {
     display: flex;
     width: 100%;
 }
@@ -63,6 +63,14 @@ div.top1 {
     font-weight: 300;
     font-style: italic;
     
+}
+
+#menu-icon {
+    font-size: 24px;
+    color: #c6c6c6;
+    cursor: pointer;
+    z-index: 100001;
+    display: block;
 }
 
 .main-ab {

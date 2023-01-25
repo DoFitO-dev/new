@@ -18,6 +18,7 @@
     <div class="top1">
         <h5 class="nav1">. /about</h5>
         <h5 class="nav1"><a href="index.html">back ></a></h5>
+        <div class="bx bx-menu" id="menu-icon"></div>
     </div>
     <about>
         <div class="main-ab">
@@ -25,6 +26,16 @@
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem quod omnis harum iste atque tenetur obcaecati accusantium magni neque, voluptatum, reprehenderit nostrum id cumque nemo quisquam esse saepe, aspernatur iusto sed enim modi architecto repellat soluta? Fuga, blanditiis? Molestias asperiores ab aspernatur corrupti animi! Doloribus, ullam deserunt. Error consequatur necessitatibus minus vel corrupti doloribus nulla aliquid nam maiores quae, distinctio eaque fugiat natus sapiente architecto maxime cupiditate laboriosam ratione! Laboriosam corrupti nostrum fugit facere. Soluta voluptatem expedita accusamus, quo natus eligendi. Sint, veritatis dolorem non maxime quas quod excepturi sit saepe voluptates quisquam quae exercitationem debitis corporis sunt nesciunt, dicta obcaecati enim blanditiis dolores tempora illum? Corrupti beatae libero cumque quo distinctio! Quisquam corrupti unde exercitationem, obcaecati eum provident sed non distinctio esse rerum quasi expedita quod. Optio odio eum esse nihil ea, beatae at quae iste alias eligendi id! Quasi voluptatem delectus consequuntur in, magnam natus laudantium nisi voluptatibus suscipit eveniet nesciunt repellendus vitae vel cupiditate asperiores dolor veritatis modi sapiente, dolores deserunt. Dolor, deserunt odit amet expedita sequi consectetur animi similique iure. Veritatis atque iure molestiae, dolorem vero voluptate laudantium amet dolores repellat! Temporibus dicta non soluta iusto nulla sed commodi eius ex velit at magnam nobis pariatur corrupti vitae, dolor tempore quod beatae assumenda similique numquam modi vel molestiae deserunt. Tempore necessitatibus et fugit. Distinctio quos rerum qui nemo, quasi, excepturi possimus exercitationem sequi vero cumque perferendis incidunt expedita aut in est similique. Qui reiciendis dolorem cum sapiente cumque reprehenderit tenetur, fuga ut hic numquam voluptatem illum saepe natus facilis ipsam ipsum? Amet voluptatem praesentium placeat numquam quos cum non sed corrupti, nisi commodi dolorem architecto porro sequi aliquam? Quod, quasi, libero ea dolorum accusantium culpa vero distinctio recusandae esse ut, unde facilis sapiente. </p>
         </div>
     </about>
+
+    <script>
+        let menu = document.querySelector('#menu-icon');
+        let navbar = document.querySelector('.navbar');
+
+        menu.onclick = () => {
+            menu.classList.toggle('bx-x');
+            navbar.classList.toggle('open');
+        }
+    </script>
 
     <script>
         var cursor = document.querySelector(".cursor");
